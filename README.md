@@ -13,11 +13,18 @@ The objective is to provide highly interpretable and accurate regression models 
 ## Project Structure
 
 ```
-├── 01_preprocessing_eda.ipynb     # Data preparation, cleaning, feature engineering, and EDA
-├── 02_fnol_model.ipynb            # FNOL (First Notification of Loss) reserve prediction model
-├── 03_final_loss_model.ipynb      # Final claim cost prediction using ensemble models
-├── merged_data.csv                # Combined dataset used across notebooks
-├── README.md                      # Project documentation
+├── data/
+│   ├── all_policy.csv
+│   ├── claims-report(14).csv.gz
+│   └── merged_data.csv
+
+├── notebooks/
+│   ├── 01_preprocessing_eda.ipynb     # Data preparation & EDA
+│   ├── 02_fnol_model.ipynb            # FNOL reserve prediction
+│   └── 03_final_loss_model.ipynb      # Final loss ensemble modeling
+
+├── README.md
+├── .gitignore
 ```
 
 ---
